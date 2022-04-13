@@ -97,7 +97,7 @@ function openPage(clickedButtonId) {
 
     $("body").append(`<div class="pageBackground"></div>
                     <div class="pageContainer">
-                        <div class="pageExit hover" onclick="exitPage()"></div>
+                        <div class="pageExitBlack hover" onclick="exitPage()"></div>
                         <div class="pageNavButton">
                             <div class="pageArrow leftArrow hover" onclick="previousPage()"></div>
                         </div>
@@ -119,6 +119,25 @@ function openPage(clickedButtonId) {
     // $(".page").append(`<div class="titleContainer">
     //                         <div class="pageNum>${clickedButtonId}</div>
     //                 </div>`)
+
+    // if (trentKim[clickedButtonId - 1].type == "Places") {
+    //     $(".pageBackground").css("background-color", "black");
+    //     $(".titleContainer").css("color", "white");
+    //     $(".pageDescription").css("color", "white");
+    //     $(".leftArrow").css("border-color", "white");
+    //     $(".rightArrow").css("border-color", "white");
+    //     $(".pageExitBlack").addClass("pageExitWhite");
+    //     $(".pageExitWhite").removeClass("pageExitBlack");
+    // } else {
+    //     $(".pageBackground").css("background-color", "white");
+    //     $(".titleContainer").css("color", "black");
+    //     $(".pageDescription").css("color", "black");
+    //     $(".leftArrow").css("border-color", "black");
+    //     $(".rightArrow").css("border-color", "black");
+    //     $(".pageExitBlack").addClass("pageExitBlack");
+    //     $(".pageExitWhite").removeClass("pageExitWhite");
+    // };
+  
     if (trentKim[clickedButtonId - 1].description == "") {
         $(".pageDescription").removeClass("pageContent");
     } else if (trentKim[clickedButtonId - 1].description != "") {
@@ -152,6 +171,24 @@ function nextPage() {
         arrayPosition = jQuery.inArray(thisPageNum, listOfTrentKim); 
         whichList = listOfTrentKim;
     };
+
+    // if ($(".clickedNav").text() == "Places") {
+    //     $(".pageBackground").css("background-color", "black");
+    //     $(".titleContainer").css("color", "white");
+    //     $(".pageDescription").css("color", "white");
+    //     $(".leftArrow").css("border-color", "white");
+    //     $(".rightArrow").css("border-color", "white");
+    //     $(".pageExitBlack").addClass("pageExitWhite");
+    //     $(".pageExitWhite").removeClass("pageExitBlack");
+    // } else {
+    //     $(".pageBackground").css("background-color", "white");
+    //     $(".titleContainer").css("color", "black");
+    //     $(".pageDescription").css("color", "black");
+    //     $(".leftArrow").css("border-color", "black");
+    //     $(".rightArrow").css("border-color", "black");
+    //     $(".pageExitWhite").addClass("pageExitBlack");
+    //     $(".pageExitBlack").removeClass("pageExitWhite");
+    // };
 
     if (whichList.length - 1 == arrayPosition) {
         nextPage = whichList[0];
@@ -202,6 +239,24 @@ function previousPage() {
         arrayPosition = jQuery.inArray(thisPageNum, listOfTrentKim); 
         whichList = listOfTrentKim;
     };
+
+    // if ($(".clickedNav").text() == "Places") {
+    //     $(".pageBackground").css("background-color", "black");
+    //     $(".titleContainer").css("color", "white");
+    //     $(".pageDescription").css("color", "white");
+    //     $(".leftArrow").css("border-color", "white");
+    //     $(".rightArrow").css("border-color", "white");
+    //     $(".pageExitBlack").addClass("pageExitWhite");
+    //     $(".pageExitWhite").removeClass("pageExitBlack");
+    // } else {
+    //     $(".pageBackground").css("background-color", "white");
+    //     $(".titleContainer").css("color", "black");
+    //     $(".pageDescription").css("color", "black");
+    //     $(".leftArrow").css("border-color", "black");
+    //     $(".rightArrow").css("border-color", "black");
+    //     $(".pageExitWhite").addClass("pageExitBlack");
+    //     $(".pageExitBlack").removeClass("pageExitWhite");
+    // };
 
     if (arrayPosition == 0) {
         nextPage = whichList[whichList.length - 1];
