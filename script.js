@@ -93,6 +93,8 @@ function showGuide(clickedNavId) {
     };
 };
 
+let isPlaces = false;
+
 function openPage(clickedButtonId) {
 
     $("body").append(`<div class="pageBackground"></div>
@@ -120,23 +122,23 @@ function openPage(clickedButtonId) {
     //                         <div class="pageNum>${clickedButtonId}</div>
     //                 </div>`)
 
-    // if (trentKim[clickedButtonId - 1].type == "Places") {
-    //     $(".pageBackground").css("background-color", "black");
-    //     $(".titleContainer").css("color", "white");
-    //     $(".pageDescription").css("color", "white");
-    //     $(".leftArrow").css("border-color", "white");
-    //     $(".rightArrow").css("border-color", "white");
-    //     $(".pageExitBlack").addClass("pageExitWhite");
-    //     $(".pageExitWhite").removeClass("pageExitBlack");
-    // } else {
-    //     $(".pageBackground").css("background-color", "white");
-    //     $(".titleContainer").css("color", "black");
-    //     $(".pageDescription").css("color", "black");
-    //     $(".leftArrow").css("border-color", "black");
-    //     $(".rightArrow").css("border-color", "black");
-    //     $(".pageExitBlack").addClass("pageExitBlack");
-    //     $(".pageExitWhite").removeClass("pageExitWhite");
-    // };
+    if (trentKim[clickedButtonId - 1].type == "Places") {
+            $(".pageBackground").animate({backgroundColor : "black"});
+            $(".titleContainer").css("color", "white");
+            $(".pageDescription").css("color", "white");
+            $(".leftArrow").css("border-color", "white");
+            $(".rightArrow").css("border-color", "white");
+            $(".pageExitBlack").addClass("pageExitWhite");
+            $(".pageExitWhite").removeClass("pageExitBlack");
+    } else {
+            $(".pageBackground").css("background-color", "white");
+            $(".titleContainer").css("color", "black");
+            $(".pageDescription").css("color", "black");
+            $(".leftArrow").css("border-color", "black");
+            $(".rightArrow").css("border-color", "black");
+            $(".pageExitWhite").addClass("pageExitBlack");
+            $(".pageExitBlack").removeClass("pageExitWhite");
+    };
   
     if (trentKim[clickedButtonId - 1].description == "") {
         $(".pageDescription").removeClass("pageContent");
@@ -172,24 +174,6 @@ function nextPage() {
         whichList = listOfTrentKim;
     };
 
-    // if ($(".clickedNav").text() == "Places") {
-    //     $(".pageBackground").css("background-color", "black");
-    //     $(".titleContainer").css("color", "white");
-    //     $(".pageDescription").css("color", "white");
-    //     $(".leftArrow").css("border-color", "white");
-    //     $(".rightArrow").css("border-color", "white");
-    //     $(".pageExitBlack").addClass("pageExitWhite");
-    //     $(".pageExitWhite").removeClass("pageExitBlack");
-    // } else {
-    //     $(".pageBackground").css("background-color", "white");
-    //     $(".titleContainer").css("color", "black");
-    //     $(".pageDescription").css("color", "black");
-    //     $(".leftArrow").css("border-color", "black");
-    //     $(".rightArrow").css("border-color", "black");
-    //     $(".pageExitWhite").addClass("pageExitBlack");
-    //     $(".pageExitBlack").removeClass("pageExitWhite");
-    // };
-
     if (whichList.length - 1 == arrayPosition) {
         nextPage = whichList[0];
     } else {
@@ -213,6 +197,35 @@ function nextPage() {
     } else if (trentKim[nextPage - 1].description != "") {
         $(".pageDescription").addClass("pageContent");
     };
+
+    if ($(".clickedNav").text() == "Places") {
+        $(".pageBackground").css("background-color", "black");
+        $(".titleContainer").css("color", "white");
+        $(".pageDescription").css("color", "white");
+        $(".leftArrow").css("border-color", "white");
+        $(".rightArrow").css("border-color", "white");
+        $(".pageExitBlack").addClass("pageExitWhite");
+        $(".pageExitWhite").removeClass("pageExitBlack");
+    };
+    if ($(".clickedNav").text() == "") {
+        if (trentKim[pageNum].type == "Places") {
+            $(".pageBackground").animate({backgroundColor : "black"});
+            $(".titleContainer").css("color", "white");
+            $(".pageDescription").css("color", "white");
+            $(".leftArrow").css("border-color", "white");
+            $(".rightArrow").css("border-color", "white");
+            $(".pageExitBlack").addClass("pageExitWhite");
+            $(".pageExitWhite").removeClass("pageExitBlack");
+        } else {
+            $(".pageBackground").animate({backgroundColor : "white"});
+            $(".titleContainer").css("color", "black");
+            $(".pageDescription").css("color", "black");
+            $(".leftArrow").css("border-color", "black");
+            $(".rightArrow").css("border-color", "black");
+            $(".pageExitWhite").addClass("pageExitBlack");
+            $(".pageExitBlack").removeClass("pageExitWhite");
+        };
+    };
 };
 
 function previousPage() {
@@ -221,7 +234,7 @@ function previousPage() {
     let nextPage;
     let arrayPosition;
     let whichList;
-    console.log(thisPageNum);
+    console.log(pageNum);
 
     if ($(".clickedNav").text() == "Projects") {
         arrayPosition = jQuery.inArray(thisPageNum, listOfProjects); 
@@ -239,24 +252,6 @@ function previousPage() {
         arrayPosition = jQuery.inArray(thisPageNum, listOfTrentKim); 
         whichList = listOfTrentKim;
     };
-
-    // if ($(".clickedNav").text() == "Places") {
-    //     $(".pageBackground").css("background-color", "black");
-    //     $(".titleContainer").css("color", "white");
-    //     $(".pageDescription").css("color", "white");
-    //     $(".leftArrow").css("border-color", "white");
-    //     $(".rightArrow").css("border-color", "white");
-    //     $(".pageExitBlack").addClass("pageExitWhite");
-    //     $(".pageExitWhite").removeClass("pageExitBlack");
-    // } else {
-    //     $(".pageBackground").css("background-color", "white");
-    //     $(".titleContainer").css("color", "black");
-    //     $(".pageDescription").css("color", "black");
-    //     $(".leftArrow").css("border-color", "black");
-    //     $(".rightArrow").css("border-color", "black");
-    //     $(".pageExitWhite").addClass("pageExitBlack");
-    //     $(".pageExitBlack").removeClass("pageExitWhite");
-    // };
 
     if (arrayPosition == 0) {
         nextPage = whichList[whichList.length - 1];
@@ -281,6 +276,36 @@ function previousPage() {
     } else if (trentKim[nextPage - 1].description != "") {
         $(".pageDescription").addClass("pageContent");
     };
+
+    if ($(".clickedNav").text() == "Places") {
+        $(".pageBackground").css("background-color", "black");
+        $(".titleContainer").css("color", "white");
+        $(".pageDescription").css("color", "white");
+        $(".leftArrow").css("border-color", "white");
+        $(".rightArrow").css("border-color", "white");
+        $(".pageExitBlack").addClass("pageExitWhite");
+        $(".pageExitWhite").removeClass("pageExitBlack");
+    };
+    if ($(".clickedNav").text() == "") {
+        if (trentKim[pageNum].type == "Places") {
+            $(".pageBackground").animate({backgroundColor : "black"});
+            $(".titleContainer").css("color", "white");
+            $(".pageDescription").css("color", "white");
+            $(".leftArrow").css("border-color", "white");
+            $(".rightArrow").css("border-color", "white");
+            $(".pageExitBlack").addClass("pageExitWhite");
+            $(".pageExitWhite").removeClass("pageExitBlack");
+        } else {
+            $(".pageBackground").animate({backgroundColor : "white"});
+            $(".titleContainer").css("color", "black");
+            $(".pageDescription").css("color", "black");
+            $(".leftArrow").css("border-color", "black");
+            $(".rightArrow").css("border-color", "black");
+            $(".pageExitWhite").addClass("pageExitBlack");
+            $(".pageExitBlack").removeClass("pageExitWhite");
+        };
+    };
+    
 };
 
 function exitPage() {
