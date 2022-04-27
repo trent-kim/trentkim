@@ -53,6 +53,7 @@ a:active {
     flex-wrap: wrap;
     flex: 0 1 auto;
     max-width: 846px;
+    margin: 8px 8px 0 8px;
     /* border: solid; */
 }
 
@@ -60,6 +61,7 @@ a:active {
     display: flex;
     width: 846px;
     padding-top: 30px;
+    margin: 0 8px 0 8px;
     /* margin-top: 8px; */
     border-top: solid;
 }
@@ -106,6 +108,7 @@ a:active {
     font-family: sans-serif;
     font-size: 16px;
     margin-right: 40px;
+    min-width: 85px;
     /* border: solid; */
 }
 
@@ -134,6 +137,7 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5px;
+    margin-right: 13px;
     max-width: 500px;
     /* border: solid; */
 }
@@ -206,7 +210,7 @@ img, video, iframe {
 
 .pageType, .pageDescription {
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .pageUpdate {
@@ -319,8 +323,66 @@ img, video, iframe {
   }
 
 
-@media only screen and (max-width: 768px) {
-    .circle{
-        border-color: aquamarine;
+@media only screen and (max-width: 600px) {
+    .bottomContentContainer {
+        padding-top: 20px;
+    }
+
+    .numButton {
+        margin: 4px 2px 10px 2px;
+    }    
+    
+    .num{
+        font-size: 36px;
+    }
+    
+    .circle {
+        width: 50px;
+        height: 50px;
+        margin-top: -2px;
+    
+    }
+
+    /*//////////// PAGE ////////////*/
+
+    img, video, iframe {
+        margin-bottom: 10px;
+    }
+    
+    .pageUpdate {
+        margin: 0;
+    }
+
+    /* PAGE EXIT */
+    .pageExitBlack {
+        height: 20px;
+        width: 20px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .pageExitWhite {
+        height: 20px;
+        width: 20px;
+        top: 10px;
+        left: 10px;
+    }
+
+    /* PAGE NAVIGATION BUTTONS */
+    .pageNavButton {
+        margin: 0;
+        /* border: solid; */
+    }
+
+    .leftArrow {
+        height: 20px;
+        width: 20px;
+        margin-left: 15px;
+    }
+
+    .rightArrow {
+        height: 20px;
+        width: 20px;
+        margin-right: 15px;
     }
 }
