@@ -58,9 +58,10 @@ a:active {
 
 .bottomContentContainer {
     display: flex;
-    max-width: 846px;
+    width: 846px;
+    padding-top: 30px;
     /* margin-top: 8px; */
-    /* border: solid; */
+    border-top: solid;
 }
 
 
@@ -318,7 +319,7 @@ img, video, iframe {
   }
 
 
-@media only screen and (m-width: 400px) {
+@media only screen and (max-width: 768px) {
     .circle{
         border-color: aquamarine;
     }

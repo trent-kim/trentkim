@@ -229,12 +229,13 @@ function nextPage() {
 };
 
 function previousPage() {
-    let pageNum = $(".pageNum").text()
+    let pageNum = $(".pageNum").text();
     let thisPageNum = pageNum.toString();
+    let pageMinus = pageNum - 2;
     let nextPage;
     let arrayPosition;
     let whichList;
-    console.log(pageNum);
+    // console.log(pageNum);
 
     if ($(".clickedNav").text() == "Projects") {
         arrayPosition = jQuery.inArray(thisPageNum, listOfProjects); 
@@ -257,7 +258,7 @@ function previousPage() {
         nextPage = whichList[whichList.length - 1];
     } else {
         nextPage = whichList[arrayPosition - 1];
-        console.log(nextPage);
+        // console.log(nextPage);
     };
 
     $(".pageNum").empty();
@@ -277,6 +278,12 @@ function previousPage() {
         $(".pageDescription").addClass("pageContent");
     };
 
+    if (trentKim[nextPage - 1].description == "") {
+        $(".pageDescription").removeClass("pageContent");
+    } else if (trentKim[nextPage - 1].description != "") {
+        $(".pageDescription").addClass("pageContent");
+    };
+
     if ($(".clickedNav").text() == "Places") {
         $(".pageBackground").css("background-color", "black");
         $(".titleContainer").css("color", "white");
@@ -287,7 +294,8 @@ function previousPage() {
         $(".pageExitWhite").removeClass("pageExitBlack");
     };
     if ($(".clickedNav").text() == "") {
-        if (trentKim[pageNum].type == "Places") {
+        if (trentKim[pageMinus].type == "Places") {
+            console.log("itsame: " + pageMinus)
             $(".pageBackground").animate({backgroundColor : "black"});
             $(".titleContainer").css("color", "white");
             $(".pageDescription").css("color", "white");
