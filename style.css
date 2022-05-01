@@ -337,6 +337,7 @@ img, video, iframe {
 @media only screen and (max-width: 600px) {
     .bottomContentContainer {
         padding-top: 20px;
+        border-width: thin;
     }
 
     .numButton {
