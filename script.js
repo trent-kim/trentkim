@@ -48,14 +48,14 @@ function showGuide(clickedNavId) {
     console.log(clickedNavId);
 
     $("#guideContainer").empty();
-    $(".nav").css("color", "black");
-    $("#" + clickedNavId).css("color", "blue");
+    $(".nav").css("color", "#515151");
+    $("#" + clickedNavId).css("color", "#3444DE");
     $(".nav").removeClass("clickedNav");
     // $("#" + idNum).removeClass("buttonDisabled");
     // $("#" + idNum).addClass("hover");
     
-    $(".circle").css("border-color", "white");
-    $(".num").css("color", "black");
+    $(".circle").css("border-color", "#F6F6F6");
+    $(".num").css("color", "#515151");
     // $(".circle").removeClass("hasCircle");
     // $(".circle").addClass("placeholder");
     $("#" + clickedNavId).addClass("clickedNav");
@@ -81,8 +81,8 @@ function showGuide(clickedNavId) {
                 $("#" + idNum).removeClass("buttonDisabled");
                 $("#" + idNum).addClass("hover");
 
-                $("#circle" + idNum).css("border-color", "blue");
-                $("#num" + idNum).css("color", "blue");
+                $("#circle" + idNum).css("border-color", "#3444DE");
+                $("#num" + idNum).css("color", "#3444DE");
             } else {
                 $("#" + idNum).removeAttr("onclick");
                 $("#" + idNum).removeClass("hover");
@@ -123,19 +123,19 @@ function openPage(clickedButtonId) {
     //                 </div>`)
 
     if (trentKim[clickedButtonId - 1].type == "Places") {
-            $(".pageBackground").animate({backgroundColor : "black"});
-            $(".titleContainer").css("color", "white");
-            $(".pageDescription").css("color", "white");
-            $(".leftArrow").css("border-color", "white");
-            $(".rightArrow").css("border-color", "white");
+            $(".pageBackground").animate({backgroundColor : "#151515"});
+            $(".titleContainer").css("color", "#F6F6F6");
+            $(".pageDescription").css("color", "#F6F6F6");
+            $(".leftArrow").css("border-color", "#F6F6F6");
+            $(".rightArrow").css("border-color", "#F6F6F6");
             $(".pageExitBlack").addClass("pageExitWhite");
             $(".pageExitWhite").removeClass("pageExitBlack");
     } else {
-            $(".pageBackground").css("background-color", "white");
-            $(".titleContainer").css("color", "black");
-            $(".pageDescription").css("color", "black");
-            $(".leftArrow").css("border-color", "black");
-            $(".rightArrow").css("border-color", "black");
+            $(".pageBackground").css("background-color", "#F6F6F6");
+            $(".titleContainer").css("color", "#515151");
+            $(".pageDescription").css("color", "#515151");
+            $(".leftArrow").css("border-color", "#515151");
+            $(".rightArrow").css("border-color", "#515151");
             $(".pageExitWhite").addClass("pageExitBlack");
             $(".pageExitBlack").removeClass("pageExitWhite");
     };
@@ -199,29 +199,29 @@ function nextPage() {
     };
 
     if ($(".clickedNav").text() == "Places") {
-        $(".pageBackground").css("background-color", "black");
-        $(".titleContainer").css("color", "white");
-        $(".pageDescription").css("color", "white");
-        $(".leftArrow").css("border-color", "white");
-        $(".rightArrow").css("border-color", "white");
+        $(".pageBackground").css("background-color", "#151515");
+        $(".titleContainer").css("color", "#F6F6F6");
+        $(".pageDescription").css("color", "#F6F6F6");
+        $(".leftArrow").css("border-color", "#F6F6F6");
+        $(".rightArrow").css("border-color", "#F6F6F6");
         $(".pageExitBlack").addClass("pageExitWhite");
         $(".pageExitWhite").removeClass("pageExitBlack");
     };
     if ($(".clickedNav").text() == "") {
         if (trentKim[pageNum].type == "Places") {
-            $(".pageBackground").animate({backgroundColor : "black"});
-            $(".titleContainer").css("color", "white");
-            $(".pageDescription").css("color", "white");
-            $(".leftArrow").css("border-color", "white");
-            $(".rightArrow").css("border-color", "white");
+            $(".pageBackground").animate({backgroundColor : "#151515"});
+            $(".titleContainer").css("color", "#F6F6F6");
+            $(".pageDescription").css("color", "#F6F6F6");
+            $(".leftArrow").css("border-color", "#F6F6F6");
+            $(".rightArrow").css("border-color", "#F6F6F6");
             $(".pageExitBlack").addClass("pageExitWhite");
             $(".pageExitWhite").removeClass("pageExitBlack");
         } else {
-            $(".pageBackground").animate({backgroundColor : "white"});
-            $(".titleContainer").css("color", "black");
-            $(".pageDescription").css("color", "black");
-            $(".leftArrow").css("border-color", "black");
-            $(".rightArrow").css("border-color", "black");
+            $(".pageBackground").animate({backgroundColor : "#F6F6F6"});
+            $(".titleContainer").css("color", "#515151");
+            $(".pageDescription").css("color", "#515151");
+            $(".leftArrow").css("border-color", "#515151");
+            $(".rightArrow").css("border-color", "#515151");
             $(".pageExitWhite").addClass("pageExitBlack");
             $(".pageExitBlack").removeClass("pageExitWhite");
         };
@@ -285,30 +285,30 @@ function previousPage() {
     };
 
     if ($(".clickedNav").text() == "Places") {
-        $(".pageBackground").css("background-color", "black");
-        $(".titleContainer").css("color", "white");
-        $(".pageDescription").css("color", "white");
-        $(".leftArrow").css("border-color", "white");
-        $(".rightArrow").css("border-color", "white");
+        $(".pageBackground").css("background-color", "#151515");
+        $(".titleContainer").css("color", "#F6F6F6");
+        $(".pageDescription").css("color", "#F6F6F6");
+        $(".leftArrow").css("border-color", "#F6F6F6");
+        $(".rightArrow").css("border-color", "#F6F6F6");
         $(".pageExitBlack").addClass("pageExitWhite");
         $(".pageExitWhite").removeClass("pageExitBlack");
     };
     if ($(".clickedNav").text() == "") {
         if (trentKim[pageMinus].type == "Places") {
             console.log("itsame: " + pageMinus)
-            $(".pageBackground").animate({backgroundColor : "black"});
-            $(".titleContainer").css("color", "white");
-            $(".pageDescription").css("color", "white");
-            $(".leftArrow").css("border-color", "white");
-            $(".rightArrow").css("border-color", "white");
+            $(".pageBackground").animate({backgroundColor : "#151515"});
+            $(".titleContainer").css("color", "#F6F6F6");
+            $(".pageDescription").css("color", "#F6F6F6");
+            $(".leftArrow").css("border-color", "#F6F6F6");
+            $(".rightArrow").css("border-color", "#F6F6F6");
             $(".pageExitBlack").addClass("pageExitWhite");
             $(".pageExitWhite").removeClass("pageExitBlack");
         } else {
-            $(".pageBackground").animate({backgroundColor : "white"});
-            $(".titleContainer").css("color", "black");
-            $(".pageDescription").css("color", "black");
-            $(".leftArrow").css("border-color", "black");
-            $(".rightArrow").css("border-color", "black");
+            $(".pageBackground").animate({backgroundColor : "#F6F6F6"});
+            $(".titleContainer").css("color", "#515151");
+            $(".pageDescription").css("color", "#515151");
+            $(".leftArrow").css("border-color", "#515151");
+            $(".rightArrow").css("border-color", "#515151");
             $(".pageExitWhite").addClass("pageExitBlack");
             $(".pageExitBlack").removeClass("pageExitWhite");
         };
