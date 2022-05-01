@@ -46,7 +46,7 @@
         "number": "7",
         "name": "The Institute of Smell",
         "type": "Projects",
-        "description": "The Institute of Smell is a gateway to a world of aroma. From fresh cut grass to new born baby, they are the world’s largest and most notable scent collection agency. They pride themselves on their extensive odor libraries and range of scent collection products. They are committed to capturing and preserving the most valuable memories to be smelt and remembered for years to come. <br><br>Through the fictional entity, Institute of Smell, I created a series of speculative thought experiments on the possible interventions and foreshadowed futures of how our olfactory systems might be exploited and our attachments in smell might change in the face of, for example, climate change or new family structures.",
+        "description": "The Institute of Smell is a gateway to a world of aroma. From fresh cut grass to new born baby, they are the world’s largest and most notable scent collection agency. They pride themselves on their extensive odor libraries and range of scent collection products. They are committed to capturing and preserving the most valuable memories to be smelt and remembered for years to come. <br><br>Through the fictional entity, The Institute of Smell, I created a series of speculative thought experiments on the possible interventions and foreshadowed futures of how our olfactory systems might be exploited and our attachments in smell might change in the face of, for example, climate change or new family structures.",
         "media": "<video controls><source src=\"assets/projects/smell-experiments/2.mov\" type=\"video/mp4\"></video><video controls><source src=\"assets/projects/smell-experiments/1.mp4\" type=\"video/mp4\"></video>"
       },
       {
@@ -167,7 +167,7 @@
         "name": "Incorporeal Company",
         "type": "Projects",
         "description": "<a href=\"https://luminous-liger-231ea3.netlify.app/\">Incorporeal Company</a> is a meditation on walking and arriving that I created as I begun to go on more walks during the COVID-19 pandemic. ",
-        "media": "<div class=\"iframeContainer\"><iframe src=\"https://luminous-liger-231ea3.netlify.app/\" allowFullScreen frameborder=\"0\" style=\"position:relative; top:0; left:0; width:100%; height:600px;\"></iframe></div>"
+        "media": "<img src=\"assets/projects/incorporeal-company/1.gif\"><img src=\"assets/projects/incorporeal-company/2.gif\"><img src=\"assets/projects/incorporeal-company/3.gif\">"
       },
       {
         "number": "25",
