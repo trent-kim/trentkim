@@ -321,3 +321,13 @@ function exitPage() {
     $(".pageBackground").remove();
     $(".numButton").addClass("hover");
 };
+
+
+
+      // {
+      //   "number": "24",
+      //   "name": "Blackstone Park",
+      //   "type": "Places",
+      //   "description": "",
+      //   "media": "<img src=\"assets/photos/22-2-14/1.jpg\"><img src=\"assets/photos/22-2-14/2.jpg\"><img src=\"assets/photos/22-2-14/3.jpg\"><img src=\"assets/photos/22-2-14/4.jpg\"><img src=\"assets/photos/22-2-14/5.jpg\">"
+      // },
