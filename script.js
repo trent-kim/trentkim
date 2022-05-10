@@ -3,7 +3,7 @@ let trentKim;
 let listOfTrentKim = [];
 let listOfProjects = [];
 let listOfNotes = [];
-let listOfPlaces = [];
+let listOfPlace = [];
 let listOfAbout = [];
 
 $.getJSON("data.json", function(data){
@@ -18,8 +18,8 @@ $.getJSON("data.json", function(data){
             listOfProjects.push(trentKim[i].number);
         } else if (trentKim[i].type == "Notes") {
             listOfNotes.push(trentKim[i].number);
-        } else if (trentKim[i].type == "Places") {
-            listOfPlaces.push(trentKim[i].number);
+        } else if (trentKim[i].type == "Place") {
+            listOfPlace.push(trentKim[i].number);
         } else if (trentKim[i].type == "About") {
             listOfAbout.push(trentKim[i].number);
         };
@@ -93,7 +93,7 @@ function showGuide(clickedNavId) {
     };
 };
 
-let isPlaces = false;
+let isPlace = false;
 
 function openPage(clickedButtonId) {
 
@@ -122,7 +122,7 @@ function openPage(clickedButtonId) {
     //                         <div class="pageNum>${clickedButtonId}</div>
     //                 </div>`)
 
-    if (trentKim[clickedButtonId - 1].type == "Places") {
+    if (trentKim[clickedButtonId - 1].type == "Place") {
             $(".pageBackground").animate({backgroundColor : "#151515"});
             $(".titleContainer").css("color", "#F6F6F6");
             $(".pageDescription").css("color", "#F6F6F6");
@@ -152,6 +152,7 @@ function openPage(clickedButtonId) {
 function nextPage() {
     let pageNum = $(".pageNum").text()
     let thisPageNum = pageNum.toString();
+    let pageMinus = pageNum - 2;
     let nextPage;
     let arrayPosition;
     let whichList;
@@ -163,9 +164,9 @@ function nextPage() {
     } else if ($(".clickedNav").text() == "Notes") {
         arrayPosition = jQuery.inArray(thisPageNum, listOfNotes); 
         whichList = listOfNotes;
-    } else if ($(".clickedNav").text() == "Places") {
-        arrayPosition = jQuery.inArray(thisPageNum, listOfPlaces); 
-        whichList = listOfPlaces;
+    } else if ($(".clickedNav").text() == "Place") {
+        arrayPosition = jQuery.inArray(thisPageNum, listOfPlace); 
+        whichList = listOfPlace;
     } else if ($(".clickedNav").text() == "About") {
         arrayPosition = jQuery.inArray(thisPageNum, listOfAbout); 
         whichList = listOfAbout;
@@ -198,7 +199,7 @@ function nextPage() {
         $(".pageDescription").addClass("pageContent");
     };
 
-    if ($(".clickedNav").text() == "Places") {
+    if ($(".clickedNav").text() == "Place") {
         $(".pageBackground").css("background-color", "#151515");
         $(".titleContainer").css("color", "#F6F6F6");
         $(".pageDescription").css("color", "#F6F6F6");
@@ -208,7 +209,7 @@ function nextPage() {
         $(".pageExitWhite").removeClass("pageExitBlack");
     };
     if ($(".clickedNav").text() == "") {
-        if (trentKim[pageNum].type == "Places") {
+        if (trentKim[pageMinus].type == "Place") {
             $(".pageBackground").animate({backgroundColor : "#151515"});
             $(".titleContainer").css("color", "#F6F6F6");
             $(".pageDescription").css("color", "#F6F6F6");
@@ -243,9 +244,9 @@ function previousPage() {
     } else if ($(".clickedNav").text() == "Notes") {
         arrayPosition = jQuery.inArray(thisPageNum, listOfNotes); 
         whichList = listOfNotes;
-    } else if ($(".clickedNav").text() == "Places") {
-        arrayPosition = jQuery.inArray(thisPageNum, listOfPlaces); 
-        whichList = listOfPlaces;
+    } else if ($(".clickedNav").text() == "Place") {
+        arrayPosition = jQuery.inArray(thisPageNum, listOfPlace); 
+        whichList = listOfPlace;
     } else if ($(".clickedNav").text() == "About") {
         arrayPosition = jQuery.inArray(thisPageNum, listOfAbout); 
         whichList = listOfAbout;
@@ -284,7 +285,7 @@ function previousPage() {
         $(".pageDescription").addClass("pageContent");
     };
 
-    if ($(".clickedNav").text() == "Places") {
+    if ($(".clickedNav").text() == "Place") {
         $(".pageBackground").css("background-color", "#151515");
         $(".titleContainer").css("color", "#F6F6F6");
         $(".pageDescription").css("color", "#F6F6F6");
@@ -294,7 +295,7 @@ function previousPage() {
         $(".pageExitWhite").removeClass("pageExitBlack");
     };
     if ($(".clickedNav").text() == "") {
-        if (trentKim[pageMinus].type == "Places") {
+        if (trentKim[pageMinus].type == "Place") {
             console.log("itsame: " + pageMinus)
             $(".pageBackground").animate({backgroundColor : "#151515"});
             $(".titleContainer").css("color", "#F6F6F6");
@@ -327,7 +328,7 @@ function exitPage() {
       // {
       //   "number": "24",
       //   "name": "Blackstone Park",
-      //   "type": "Places",
+      //   "type": "Place",
       //   "description": "",
       //   "media": "<img src=\"assets/photos/22-2-14/1.jpg\"><img src=\"assets/photos/22-2-14/2.jpg\"><img src=\"assets/photos/22-2-14/3.jpg\"><img src=\"assets/photos/22-2-14/4.jpg\"><img src=\"assets/photos/22-2-14/5.jpg\">"
       // },

@@ -17,12 +17,10 @@ body {
 
 /* LINKS */
 a:link {
-    /* color: blue; */
     color: #3444DE;
 }
   
 a:visited {
-    /* color: blue; */
     color: #3444DE;
 }
 
@@ -31,7 +29,6 @@ a:hover {
 }
 
 a:active {
-    /* color: blue; */
     color: #3444DE;
 }
 
@@ -41,15 +38,13 @@ a:active {
 #mainContainer {
     display: flex;
     flex-direction: column;
-    /* position: fixed; */
     overflow: scroll;
+    /* border: solid; */
 }
 
 .flexContainer {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
-    /* border: solid; */
 }
 
 .topContentContainer {
@@ -58,7 +53,6 @@ a:active {
     flex: 0 1 auto;
     max-width: 846px;
     margin: 8px 8px 0 8px;
-    /* border: solid; */
 }
 
 .bottomContentContainer {
@@ -66,7 +60,6 @@ a:active {
     width: 846px;
     padding-top: 30px;
     margin: 0 8px 0 8px;
-    /* margin-top: 8px; */
     border-top: solid;
     border-color: #515151;
 }
@@ -76,7 +69,6 @@ a:active {
 /*/////// NUMBER BUTTONS ///////*/
 .numButton {
     display: grid;
-    
     margin: 8px 5px 12px 5px;
 }
 
@@ -115,11 +107,9 @@ a:active {
     font-size: 16px;
     margin-right: 40px;
     min-width: 85px;
-    /* border: solid; */
 }
 
 #homeTrent {
-    /* color: blue; */
     color: #3444DE;
 }
 
@@ -132,12 +122,6 @@ a:active {
     font-family: sans-serif;
     font-style: italic;
     font-size: 16px;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: auto;
-    height: 50%; */
-    /* border: solid; */
 }
 
 .guideText {
@@ -147,7 +131,6 @@ a:active {
     margin-right: 13px;
     max-width: 500px;
     color: #515151;
-    /* border: solid; */
 }
 
 
@@ -172,19 +155,16 @@ a:active {
     height: 100%;
     z-index: 2;
     overflow: scroll;
-    /* border: solid; */
 }
 
 .pageContentContainer {
     display: flex;
     flex-direction: column;
     width: 820px;
-    /* border: solid; */
 }
 
 .pageType {
     margin: 30px 0 10px 0;
-    /* color: blue; */
     color: #3444DE;
 }
 
@@ -194,13 +174,11 @@ a:active {
     font-size: 36px;
     margin-bottom: 30px;
     color: #515151;
-    /* border: solid; */
 }
 
 .pageDescription {
     object-fit: contain;
     color: #515151;
-    /* border: solid; */
 }
 
 .pageContent {
@@ -294,7 +272,6 @@ img, video, iframe {
     top: 0%;
     align-items: center;
     margin: 0 20px 0 20px;
-    /* border: solid; */
 }
 
 .leftArrow {
@@ -320,20 +297,20 @@ img, video, iframe {
 
 .iframeContainer {
     overflow: hidden;
-    /* padding-top: 56.25%; 16:9 */
     position: relative;
-  }
+}
   
-  .iframeContainer iframe {
-     border: 0;
-     height: 100%;
-     left: 0;
-     position: absolute;
-     top: 0;
-     width: 100%;
-  }
+.iframeContainer iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 
-
+  
+/*//////////////// MOBILE ////////////////*/
 @media only screen and (max-width: 600px) {
     .bottomContentContainer {
         padding-top: 20px;
@@ -383,7 +360,6 @@ img, video, iframe {
     /* PAGE NAVIGATION BUTTONS */
     .pageNavButton {
         margin: 0;
-        /* border: solid; */
     }
 
     .leftArrow {

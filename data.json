@@ -9,10 +9,10 @@
       },
       {
         "number": "2",
-        "name": "East Point Lighthouse",
-        "type": "Places",
+        "name": "College Hill",
+        "type": "Place",
         "description": "",
-        "media": "<img src=\"assets/photos/21-9-26/1.jpg\"><img src=\"assets/photos/21-9-26/2.jpg\"><img src=\"assets/photos/21-9-26/3.jpg\"><img src=\"assets/photos/21-9-26/4.jpg\"><img src=\"assets/photos/21-9-26/5.jpg\">"
+        "media": "<img src=\"assets/photos/college-hill/1.jpeg\"><img src=\"assets/photos/college-hill/2.jpeg\"><img src=\"assets/photos/college-hill/3.jpeg\"><img src=\"assets/photos/college-hill/4.jpeg\"><img src=\"assets/photos/college-hill/5.jpeg\"><img src=\"assets/photos/college-hill/6.jpeg\"><img src=\"assets/photos/college-hill/7.jpeg\">"
       },
       {
         "number": "3",
@@ -24,9 +24,9 @@
       {
         "number": "4",
         "name": "College Hill",
-        "type": "Places",
+        "type": "Place",
         "description": "",
-        "media": "<img src=\"assets/photos/21-12-1/1.jpeg\"><img src=\"assets/photos/21-12-1/2.jpeg\"><img src=\"assets/photos/21-12-1/3.jpeg\"><img src=\"assets/photos/21-12-1/4.jpeg\"><img src=\"assets/photos/21-12-1/5.jpeg\"><img src=\"assets/photos/21-12-1/6.jpeg\"><img src=\"assets/photos/21-12-1/7.jpeg\">"
+        "media": "<img src=\"assets/photos/college-hill-2/1.jpg\"><img src=\"assets/photos/college-hill-2/2.jpg\"><img src=\"assets/photos/college-hill-2/3.jpg\">"
       },
       {
         "number": "5",
@@ -46,7 +46,7 @@
         "number": "7",
         "name": "The Institute of Smell",
         "type": "Projects",
-        "description": "The Institute of Smell is a gateway to a world of aroma. From fresh cut grass to new born baby, they are the world’s largest and most notable scent collection agency. They pride themselves on their extensive odor libraries and range of scent collection products. They are committed to capturing and preserving the most valuable memories to be smelt and remembered for years to come. <br><br>Through the fictional entity, The Institute of Smell, I created a series of speculative thought experiments on the possible interventions and foreshadowed futures of how our olfactory systems might be exploited and our attachments in smell might change in the face of, for example, climate change or new family structures.",
+        "description": "The Institute of Smell is a gateway to a world of aroma. From fresh cut grass to new born baby, they are the world’s largest and most notable scent collection agency. They pride themselves on their extensive odor libraries and range of scent collection products. They are committed to capturing and preserving the most valuable memories to be smelled and remembered for years to come. <br><br>Through the fictional entity of The Institute of Smell, I became interested in exploring the possible interventions and speculative futures of how our olfactory systems might be exploited and our perceptions of smell might change in the face of evolving family structures, loss, and climate disaster.",
         "media": "<video controls><source src=\"assets/projects/smell-experiments/2.mov\" type=\"video/mp4\"></video><video controls><source src=\"assets/projects/smell-experiments/1.mp4\" type=\"video/mp4\"></video>"
       },
       {
@@ -58,10 +58,10 @@
       },
       {
         "number": "9",
-        "name": "College Hill",
-        "type": "Places",
+        "name": "Bedroom",
+        "type": "Place",
         "description": "",
-        "media": "<img src=\"assets/photos/21-12-8/1.jpg\"><img src=\"assets/photos/21-12-8/2.jpg\"><img src=\"assets/photos/21-12-8/3.jpg\"><img src=\"assets/photos/21-12-8/4.jpg\">"
+        "media": "<img src=\"assets/photos/bedroom/1.jpg\"><img src=\"assets/photos/bedroom/2.jpg\"><img src=\"assets/photos/bedroom/3.jpg\">"
       },
       {
         "number": "10",
@@ -79,18 +79,18 @@
       },
       {
         "number": "12",
-        "name": "Bedroom",
-        "type": "Places",
+        "name": "Living Room",
+        "type": "Place",
         "description": "",
-        "media": "<img src=\"assets/photos/21-12-17/1.jpg\"><img src=\"assets/photos/21-12-17/2.jpg\"><img src=\"assets/photos/21-12-17/3.jpg\"><img src=\"assets/photos/21-12-17/4.jpg\">"
+        "media": "<img src=\"assets/photos/living-room/1.jpg\"><img src=\"assets/photos/living-room/2.jpg\"><img src=\"assets/photos/living-room/3.jpg\">"
       },
       
       {
         "number": "13",
-        "name": "Living Room",
-        "type": "Places",
+        "name": "Karezz Hair Salon",
+        "type": "Place",
         "description": "",
-        "media": "<img src=\"assets/photos/22-1-5/1.jpg\"><img src=\"assets/photos/22-1-5/2.jpg\"><img src=\"assets/photos/22-1-5/3.jpg\"><img src=\"assets/photos/22-1-5/4.jpg\">"
+        "media": "<img src=\"assets/photos/karezz-hair-salon/1.jpg\"><img src=\"assets/photos/karezz-hair-salon/2.jpg\"><img src=\"assets/photos/karezz-hair-salon/3.jpg\"><img src=\"assets/photos/karezz-hair-salon/4.jpg\">"
       },
       {
         "number": "14",
@@ -103,15 +103,15 @@
         "number": "15",
         "name": "The Past Year",
         "type": "About",
-        "description": "Since graduating in June of 2021, I have been learning how and allowing myself to grieve loss, heal trauma, and reclaim identity as a transnational, transracial Korean adoptee. These days I can be found learning a lost language, reading poetry, walking aimlessly, photographing the places I’ve been, and cooking for myself.",
+        "description": "Since graduating in June of 2021, I have been learning how and allowing myself to grieve loss, heal trauma, and reclaim identity as a transnational, transracial Korean adoptee. These days I can be found learning a lost language, reading poetry, walking aimlessly, taking blurry photos at night, and cooking for myself.",
         "media": ""
       },
       {
         "number": "16",
-        "name": "Gammino Pond Preserve",
-        "type": "Places",
+        "name": "Bedroom",
+        "type": "Place",
         "description": "",
-        "media": "<img src=\"assets/photos/22-1-7/1.jpg\"><img src=\"assets/photos/22-1-7/2.jpg\"><img src=\"assets/photos/22-1-7/3.jpg\"><img src=\"assets/photos/22-1-7/4.jpg\">"
+        "media": "<img src=\"assets/photos/bedroom-2/1.jpg\"><img src=\"assets/photos/bedroom-2/2.jpg\">"
       },
       {
         "number": "17",
@@ -122,17 +122,17 @@
       },
       {
         "number": "18",
-        "name": "Karezz Hair Salon",
-        "type": "Places",
+        "name": "Old Bridge Path",
+        "type": "Place",
         "description": "",
-        "media": "<img src=\"assets/photos/22-1-18/1.jpg\"><img src=\"assets/photos/22-1-18/2.jpg\"><img src=\"assets/photos/22-1-18/3.jpg\"><img src=\"assets/photos/22-1-18/4.jpg\"><img src=\"assets/photos/22-1-18/5.jpg\"><img src=\"assets/photos/22-1-18/6.jpg\">"
+        "media": "<img src=\"assets/photos/old-bridge-path/1.jpg\"><img src=\"assets/photos/old-bridge-path/2.jpg\"><img src=\"assets/photos/old-bridge-path/3.jpg\"><img src=\"assets/photos/old-bridge-path/4.jpg\">"
       },
       {
         "number": "19",
         "name": "Bedroom",
-        "type": "Places",
+        "type": "Place",
         "description": "",
-        "media": "<img src=\"assets/photos/22-1-29/1.jpg\">"
+        "media": "<img src=\"assets/photos/bedroom-3/3.jpg\"><img src=\"assets/photos/bedroom-3/2.jpg\"><img src=\"assets/photos/bedroom-3/1.jpg\">"
       },
       {
         "number": "20",
@@ -144,9 +144,9 @@
       {
         "number": "21",
         "name": "Old Bridge Path",
-        "type": "Places",
+        "type": "Place",
         "description": "",
-        "media": "<img src=\"assets/photos/22-2-12/1.jpg\"><img src=\"assets/photos/22-2-12/2.jpg\"><img src=\"assets/photos/22-2-12/3.jpg\"><img src=\"assets/photos/22-2-12/4.jpg\">"
+        "media": "<img src=\"assets/photos/old-bridge-path-2/1.jpg\"><img src=\"assets/photos/old-bridge-path-2/2.jpg\"><img src=\"assets/photos/old-bridge-path-2/3.jpg\">"
       },
       {
         "number": "22",
@@ -158,9 +158,9 @@
       {
         "number": "23",
         "name": "Bedroom",
-        "type": "Places",
+        "type": "Place",
         "description": "",
-        "media": "<img src=\"assets/photos/22-2-20/1.jpg\"><img src=\"assets/photos/22-2-20/2.jpg\"><img src=\"assets/photos/22-2-20/3.jpg\"><img src=\"assets/photos/22-2-20/4.jpg\">"
+        "media": "<img src=\"assets/photos/bedroom-4/1.jpg\">"
       },
       {
         "number": "24",
@@ -171,10 +171,10 @@
       },
       {
         "number": "25",
-        "name": "Old Bridge Path",
-        "type": "Places",
+        "name": "India Point Park",
+        "type": "Place",
         "description": "",
-        "media": "<img src=\"assets/photos/22-2-23/1.jpg\"><img src=\"assets/photos/22-2-23/2.jpg\"><img src=\"assets/photos/22-2-23/3.jpg\">"
+        "media": "<img src=\"assets/photos/india-point-park/1.jpg\"><img src=\"assets/photos/india-point-park/2.jpg\">"
       },
       {
         "number": "26",
@@ -185,10 +185,10 @@
       },
       {
         "number": "27",
-        "name": "Caratunk Wildlife Refuge",
-        "type": "Places",
+        "name": "Old Bridge Path",
+        "type": "Place",
         "description": "",
-        "media": "<img src=\"assets/photos/22-3-27/1.jpg\"><img src=\"assets/photos/22-3-27/2.jpg\"><img src=\"assets/photos/22-3-27/3.jpg\"><img src=\"assets/photos/22-3-27/4.jpg\">"
+        "media": "<img src=\"assets/photos/old-bridge-path-3/1.jpg\"><img src=\"assets/photos/old-bridge-path-3/2.jpg\">"
       },
       {
         "number": "28",
@@ -199,10 +199,10 @@
       },
       {
         "number": "29",
-        "name": "Bedroom",
-        "type": "Places",
+        "name": "Exit 1D",
+        "type": "Place",
         "description": "",
-        "media": "<img src=\"assets/photos/21-9-30/1.jpeg\"><img src=\"assets/photos/22-4-3/1.jpg\">"
+        "media": "<img src=\"assets/photos/exit-1d/1.jpg\"><img src=\"assets/photos/exit-1d/2.jpg\">"
       },
       {
         "number": "30",
