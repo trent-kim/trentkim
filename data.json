@@ -10,7 +10,7 @@
       {
         "number": "2",
         "name": "College Hill",
-        "type": "Place",
+        "type": "Nearby",
         "description": "",
         "media": "<img src=\"assets/photos/college-hill/1.jpeg\"><img src=\"assets/photos/college-hill/2.jpeg\"><img src=\"assets/photos/college-hill/3.jpeg\"><img src=\"assets/photos/college-hill/4.jpeg\"><img src=\"assets/photos/college-hill/5.jpeg\"><img src=\"assets/photos/college-hill/6.jpeg\"><img src=\"assets/photos/college-hill/7.jpeg\">"
       },
@@ -24,7 +24,7 @@
       {
         "number": "4",
         "name": "College Hill",
-        "type": "Place",
+        "type": "Nearby",
         "description": "",
         "media": "<img src=\"assets/photos/college-hill-2/1.jpg\"><img src=\"assets/photos/college-hill-2/2.jpg\"><img src=\"assets/photos/college-hill-2/3.jpg\">"
       },
@@ -59,7 +59,7 @@
       {
         "number": "9",
         "name": "Bedroom",
-        "type": "Place",
+        "type": "Nearby",
         "description": "",
         "media": "<img src=\"assets/photos/bedroom/1.jpg\"><img src=\"assets/photos/bedroom/2.jpg\"><img src=\"assets/photos/bedroom/3.jpg\">"
       },
@@ -80,7 +80,7 @@
       {
         "number": "12",
         "name": "Living Room",
-        "type": "Place",
+        "type": "Nearby",
         "description": "",
         "media": "<img src=\"assets/photos/living-room/1.jpg\"><img src=\"assets/photos/living-room/2.jpg\"><img src=\"assets/photos/living-room/3.jpg\">"
       },
@@ -88,7 +88,7 @@
       {
         "number": "13",
         "name": "Karezz Hair Salon",
-        "type": "Place",
+        "type": "Nearby",
         "description": "",
         "media": "<img src=\"assets/photos/karezz-hair-salon/1.jpg\"><img src=\"assets/photos/karezz-hair-salon/2.jpg\"><img src=\"assets/photos/karezz-hair-salon/3.jpg\"><img src=\"assets/photos/karezz-hair-salon/4.jpg\">"
       },
@@ -109,7 +109,7 @@
       {
         "number": "16",
         "name": "Bedroom",
-        "type": "Place",
+        "type": "Nearby",
         "description": "",
         "media": "<img src=\"assets/photos/bedroom-2/1.jpg\"><img src=\"assets/photos/bedroom-2/2.jpg\">"
       },
@@ -123,14 +123,14 @@
       {
         "number": "18",
         "name": "Old Bridge Path",
-        "type": "Place",
+        "type": "Nearby",
         "description": "",
         "media": "<img src=\"assets/photos/old-bridge-path/1.jpg\"><img src=\"assets/photos/old-bridge-path/2.jpg\"><img src=\"assets/photos/old-bridge-path/3.jpg\"><img src=\"assets/photos/old-bridge-path/4.jpg\">"
       },
       {
         "number": "19",
         "name": "Bedroom",
-        "type": "Place",
+        "type": "Nearby",
         "description": "",
         "media": "<img src=\"assets/photos/bedroom-3/3.jpg\"><img src=\"assets/photos/bedroom-3/2.jpg\"><img src=\"assets/photos/bedroom-3/1.jpg\">"
       },
@@ -144,7 +144,7 @@
       {
         "number": "21",
         "name": "Old Bridge Path",
-        "type": "Place",
+        "type": "Nearby",
         "description": "",
         "media": "<img src=\"assets/photos/old-bridge-path-2/1.jpg\"><img src=\"assets/photos/old-bridge-path-2/2.jpg\"><img src=\"assets/photos/old-bridge-path-2/3.jpg\">"
       },
@@ -158,7 +158,7 @@
       {
         "number": "23",
         "name": "Bedroom",
-        "type": "Place",
+        "type": "Nearby",
         "description": "",
         "media": "<img src=\"assets/photos/bedroom-4/1.jpg\">"
       },
@@ -172,7 +172,7 @@
       {
         "number": "25",
         "name": "India Point Park",
-        "type": "Place",
+        "type": "Nearby",
         "description": "",
         "media": "<img src=\"assets/photos/india-point-park/1.jpg\"><img src=\"assets/photos/india-point-park/2.jpg\">"
       },
@@ -186,7 +186,7 @@
       {
         "number": "27",
         "name": "Old Bridge Path",
-        "type": "Place",
+        "type": "Nearby",
         "description": "",
         "media": "<img src=\"assets/photos/old-bridge-path-3/1.jpg\"><img src=\"assets/photos/old-bridge-path-3/2.jpg\">"
       },
@@ -200,7 +200,7 @@
       {
         "number": "29",
         "name": "Exit 1D",
-        "type": "Place",
+        "type": "Nearby",
         "description": "",
         "media": "<img src=\"assets/photos/exit-1d/1.jpg\"><img src=\"assets/photos/exit-1d/2.jpg\">"
       },

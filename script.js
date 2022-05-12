@@ -3,7 +3,7 @@ let trentKim;
 let listOfTrentKim = [];
 let listOfProjects = [];
 let listOfNotes = [];
-let listOfPlace = [];
+let listOfNearby = [];
 let listOfAbout = [];
 
 $.getJSON("data.json", function(data){
@@ -18,8 +18,8 @@ $.getJSON("data.json", function(data){
             listOfProjects.push(trentKim[i].number);
         } else if (trentKim[i].type == "Notes") {
             listOfNotes.push(trentKim[i].number);
-        } else if (trentKim[i].type == "Place") {
-            listOfPlace.push(trentKim[i].number);
+        } else if (trentKim[i].type == "Nearby") {
+            listOfNearby.push(trentKim[i].number);
         } else if (trentKim[i].type == "About") {
             listOfAbout.push(trentKim[i].number);
         };
@@ -93,7 +93,7 @@ function showGuide(clickedNavId) {
     };
 };
 
-let isPlace = false;
+let isNearby = false;
 
 function openPage(clickedButtonId) {
 
@@ -122,7 +122,7 @@ function openPage(clickedButtonId) {
     //                         <div class="pageNum>${clickedButtonId}</div>
     //                 </div>`)
 
-    if (trentKim[clickedButtonId - 1].type == "Place") {
+    if (trentKim[clickedButtonId - 1].type == "Nearby") {
             $(".pageBackground").animate({backgroundColor : "#151515"});
             $(".titleContainer").css("color", "#F6F6F6");
             $(".pageDescription").css("color", "#F6F6F6");
@@ -164,9 +164,9 @@ function nextPage() {
     } else if ($(".clickedNav").text() == "Notes") {
         arrayPosition = jQuery.inArray(thisPageNum, listOfNotes); 
         whichList = listOfNotes;
-    } else if ($(".clickedNav").text() == "Place") {
-        arrayPosition = jQuery.inArray(thisPageNum, listOfPlace); 
-        whichList = listOfPlace;
+    } else if ($(".clickedNav").text() == "Nearby") {
+        arrayPosition = jQuery.inArray(thisPageNum, listOfNearby); 
+        whichList = listOfNearby;
     } else if ($(".clickedNav").text() == "About") {
         arrayPosition = jQuery.inArray(thisPageNum, listOfAbout); 
         whichList = listOfAbout;
@@ -199,7 +199,7 @@ function nextPage() {
         $(".pageDescription").addClass("pageContent");
     };
 
-    if ($(".clickedNav").text() == "Place") {
+    if ($(".clickedNav").text() == "Nearby") {
         $(".pageBackground").css("background-color", "#151515");
         $(".titleContainer").css("color", "#F6F6F6");
         $(".pageDescription").css("color", "#F6F6F6");
@@ -209,7 +209,7 @@ function nextPage() {
         $(".pageExitWhite").removeClass("pageExitBlack");
     };
     if ($(".clickedNav").text() == "") {
-        if (trentKim[pageMinus].type == "Place") {
+        if (trentKim[pageMinus].type == "Nearby") {
             $(".pageBackground").animate({backgroundColor : "#151515"});
             $(".titleContainer").css("color", "#F6F6F6");
             $(".pageDescription").css("color", "#F6F6F6");
@@ -244,9 +244,9 @@ function previousPage() {
     } else if ($(".clickedNav").text() == "Notes") {
         arrayPosition = jQuery.inArray(thisPageNum, listOfNotes); 
         whichList = listOfNotes;
-    } else if ($(".clickedNav").text() == "Place") {
-        arrayPosition = jQuery.inArray(thisPageNum, listOfPlace); 
-        whichList = listOfPlace;
+    } else if ($(".clickedNav").text() == "Nearby") {
+        arrayPosition = jQuery.inArray(thisPageNum, listOfNearby); 
+        whichList = listOfNearby;
     } else if ($(".clickedNav").text() == "About") {
         arrayPosition = jQuery.inArray(thisPageNum, listOfAbout); 
         whichList = listOfAbout;
@@ -285,7 +285,7 @@ function previousPage() {
         $(".pageDescription").addClass("pageContent");
     };
 
-    if ($(".clickedNav").text() == "Place") {
+    if ($(".clickedNav").text() == "Nearby") {
         $(".pageBackground").css("background-color", "#151515");
         $(".titleContainer").css("color", "#F6F6F6");
         $(".pageDescription").css("color", "#F6F6F6");
@@ -295,7 +295,7 @@ function previousPage() {
         $(".pageExitWhite").removeClass("pageExitBlack");
     };
     if ($(".clickedNav").text() == "") {
-        if (trentKim[pageMinus].type == "Place") {
+        if (trentKim[pageMinus].type == "Nearby") {
             console.log("itsame: " + pageMinus)
             $(".pageBackground").animate({backgroundColor : "#151515"});
             $(".titleContainer").css("color", "#F6F6F6");
