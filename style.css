@@ -6,7 +6,7 @@ html, body {
 
 body {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     
 }
 
@@ -35,10 +35,16 @@ a:active {
 
 
 /*/////// MAIN CONTAINERS ///////*/
-#mainContainer {
+#directContainer {
     display: flex;
-    flex-direction: column;
-    overflow: scroll;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    max-width: 413px;
+    align-content: space-between;
+    height: 100vh;
+    padding: 0px 30px 0px 30px;
+    border-right: solid;
+    /* overflow: scroll; */
     /* border: solid; */
 }
 
@@ -51,25 +57,65 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     flex: 0 1 auto;
-    max-width: 846px;
-    margin: 8px 8px 0 8px;
+    max-width: 413px;
+    /* margin: 8px 8px 0 8px; */
+    /* border: solid; */
 }
 
 .bottomContentContainer {
-    display: flex;
-    width: 846px;
-    padding-top: 30px;
-    margin: 0 8px 0 8px;
-    border-top: solid;
-    border-color: #515151;
+    /* display: flex; */
+    /* border: solid; */
+    padding: 0px 15px 0px 30px;
 }
 
+#aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 413px;
+    /* border: solid; */
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
 
+#aboutDescription {
+    margin-bottom: 30px;
+}
+
+#controlsContainer {
+    margin-top: 30px;
+    /* border: solid; */
+}
+
+#contentContainer {
+    /* border: solid; */
+    padding: 0px 30px 0px 15px;
+    height: 100vh;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
+#prevNext {
+    display: flex;
+    font-family: sans-serif;
+    font-size: 16px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.itemInfo {
+    font-size: 16px;
+    /* margin-left: 40px; */
+}
 
 /*/////// NUMBER BUTTONS ///////*/
 .numButton {
     display: grid;
-    margin: 8px 5px 12px 5px;
+    margin: 2.5px 2.5px 2.5px 2.5px;
+    justify-items: center;
+    align-items: center;
 }
 
 .num, .circle {
@@ -79,19 +125,23 @@ a:active {
 
 .num{
     font-family: 'EB Garamond', serif;
-    font-size: 64px;
+    font-size: 36px;
     text-align: center;
     color: #515151;
+    width: 50px;
+    height: 50px;
+    /* border: solid; */
 }
 
 .circle {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: solid;
     border-color: #F6F6F6;
+    /* border-color: #515151; */
     border-width: 2px;
-    margin-top: 2px;
+    /* margin-top: 2px; */
 
 }
 
@@ -99,14 +149,26 @@ a:active {
     opacity: 50%;
 }
 
+.numHover:hover {
+    color: #F6F6F6;
+}
+
+.cirHover:hover {
+    border-color: #3444DE;
+    background-color: #3444DE;
+}
 
 
 /*/////// NAVIGATION BAR ///////*/
-#navContainer {
+#navBar {
+    display: flex;
+    /* flex-direction: column; */
     font-family: sans-serif;
     font-size: 16px;
-    margin-right: 40px;
+    margin-bottom: 20px;
     min-width: 85px;
+    /* border: solid; */
+    justify-content: space-between;
 }
 
 #homeTrent {
@@ -114,66 +176,36 @@ a:active {
 }
 
 .nav {
-    margin-left: 13px;
-    margin-bottom: 5px;
+    /* margin-left: 13px; */
+    /* margin-bottom: 5px; */
 }
 
 #guideContainer {
+    display: flex;
+    flex-direction: column;
     font-family: sans-serif;
     font-style: italic;
-    font-size: 16px;
+    border: solid;
+    width: 210px;
+    padding: 20px;
+    color: #515151;
+    margin-top: 85px;
 }
 
 .guideText {
+    font-size: 16px;
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 5px;
-    margin-right: 13px;
-    max-width: 500px;
-    color: #515151;
 }
 
 
 
 /*//////////// PAGE ////////////*/
-.pageBackground {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #F6F6F6;
-    opacity: 95%;
-}
-
-.pageContainer {
-    display: flex;
-    position: fixed;
-    top: 0;
-    justify-content: space-between;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    overflow: scroll;
-}
-
 .pageContentContainer {
     display: flex;
+    
     flex-direction: column;
-    width: 820px;
-}
-
-.pageType {
-    margin: 30px 0 10px 0;
-    color: #3444DE;
-}
-
-.titleContainer {
-    display: flex;
-    font-family: 'EB Garamond', serif;
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #515151;
+    margin: 85px 0px 65px 0px;
+    /* width: 820px; */
 }
 
 .pageDescription {
@@ -182,7 +214,7 @@ a:active {
 }
 
 .pageContent {
-    margin: 0 0 40px 0;
+    margin: 0 0 30px 0;
 }
 
 .pageMedia {
@@ -192,106 +224,20 @@ a:active {
 }
 
 img, video, iframe {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     max-width: 100%;
     max-height: 100%;
 }
 
-.pageType, .pageDescription {
+.pageDescription {
     font-family: sans-serif;
     font-size: 16px;
 }
 
 .pageUpdate {
-    margin: 0 20px 0 20px;
-}
-
-/* PAGE EXIT */
-.pageExitBlack {
-    height: 80px;
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 2; 
-}
-
-.pageExitBlack::before,
-.pageExitBlack::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 2px; /* cross thickness */
-    background-color: #515151;;
-}
-
-.pageExitBlack::before {
-    transform: rotate(45deg);
-}
-
-.pageExitBlack::after {
-    transform: rotate(-45deg);
-}
-
-.pageExitWhite {
-    height: 80px;
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 2; 
-}
-
-.pageExitWhite::before,
-.pageExitWhite::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 2px; /* cross thickness */
-    background-color: #F6F6F6;
-}
-
-.pageExitWhite::before {
-    transform: rotate(45deg);
-}
-
-.pageExitWhite::after {
-    transform: rotate(-45deg);
-}
-
-/* PAGE NAVIGATION BUTTONS */
-.pageNavButton {
-    display: flex;
-    position: sticky;
-    top: 0%;
-    align-items: center;
-    margin: 0 20px 0 20px;
-}
-
-.leftArrow {
-    height: 58px;
-    width: 58px;
-    margin-left: 20px;
-    border-bottom: 2px solid;
-    border-left: 2px solid;
-    border-color: #515151;;
-    transform: rotate(45deg);
-}
-
-.rightArrow {
-    height: 58px;
-    width: 58px;
-    margin-right: 20px;
-    border-bottom: 2px solid;
-    border-right: 2px solid;
-    border-color: #515151;
-    transform: rotate(-45deg);
+    border: solid;
+    padding: 20px;
+    margin: 0 30px 0 30px;
 }
 
 
@@ -301,12 +247,12 @@ img, video, iframe {
 }
   
 .iframeContainer iframe {
-    border: 0;
+    /* border: 0; */
     height: 100%;
-    left: 0;
+    /* left: 0;
     position: absolute;
-    top: 0;
-    width: 100%;
+    top: 0; */
+    max-width: 100%;
 }
 
   
