@@ -3,7 +3,7 @@ let trentKim;
 let listOfTrentKim = [];
 let listOfProjects = [];
 let listOfNotes = [];
-let listOfNearby = [];
+let listOfPlaces = [];
 // let listOfAbout = [];
 
 // DATA
@@ -23,8 +23,8 @@ $.getJSON("data.json", function(data){
             listOfProjects.push(trentKim[i].number);
         } else if (trentKim[i].type == "Notes") {
             listOfNotes.push(trentKim[i].number);
-        } else if (trentKim[i].type == "Nearby") {
-            listOfNearby.push(trentKim[i].number);
+        } else if (trentKim[i].type == "Places") {
+            listOfPlaces.push(trentKim[i].number);
         // } else if (trentKim[i].type == "About") {
         //     listOfAbout.push(trentKim[i].number);
         };
@@ -32,7 +32,7 @@ $.getJSON("data.json", function(data){
         // create guide list
         $("#guideContainer").append(`<div id="guide${trentKim[i].number}" class="guideText">
                 <div>${trentKim[i].number}.&nbsp;</div>
-                <div id="item${trentKim[i].number}">${trentKim[i].name}</div>
+                <div class="guideTitle" id="item${trentKim[i].number}">${trentKim[i].name}</div>
             </div>`);
     }; 
 });
@@ -87,12 +87,11 @@ function filterGuide(clickedNavId) {
     // remove content and reset state 
     $("#contentContainer").empty();
 
-    $(".numButton").addClass("hover");
+    // $(".numButton").addClass("hover");
     $(".num").removeClass("selected");
-    $(".numButton").attr("onmouseover", "numHover(this.id)");
-    $(".numButton").attr("onmouseout", "numHoverExit()");
-
-    $("#prevNext").empty();
+    $(".numButton").removeAttr("onmouseover");
+    $(".numButton").removeAttr("onmouseout");
+    
 
     $(".circle").css("border-color", "#F6F6F6");
     $(".circle").css("background-color", "");
@@ -130,6 +129,8 @@ function filterGuide(clickedNavId) {
             $("#" + idNum).attr("onclick", "openPage(this.id)");
             $("#" + idNum).removeClass("buttonDisabled");
             $("#" + idNum).addClass("hover");
+            $("#" + idNum).attr("onmouseover", "numHover(this.id)");
+            $("#" + idNum).attr("onmouseout", "numHoverExit()");
         } else {
             // if an item equals the selected filter, then append that item to the guide list
             if (trentKim[j].type == clickedNavId) {
@@ -141,6 +142,8 @@ function filterGuide(clickedNavId) {
                 $("#" + idNum).attr("onclick", "openPage(this.id)");
                 $("#" + idNum).removeClass("buttonDisabled");
                 $("#" + idNum).addClass("hover");
+                $("#" + idNum).attr("onmouseover", "numHover(this.id)");
+                $("#" + idNum).attr("onmouseout", "numHoverExit()");
 
                 // highlight number buttons within the filter
                 $("#circle" + idNum).css("border-color", "#3444DE");
@@ -200,8 +203,12 @@ function openPage(clickedButtonId) {
     $("#guide" + clickedButtonId).css("margin", "16px 0px 16px 0px");
 
     // append the previous and next buttons
-    $("#prevNext").append(`<div class="previous hover" onclick="previousPage()">&lt; Previous</div>
-                            <div class="next hover" onclick="nextPage()">Next &gt;</div>`);
+    $(".previous").attr("onclick", "previousPage()");
+    $(".previous").removeClass("buttonDisabled");
+    $(".previous").addClass("hover");
+    $(".next").attr("onclick", "nextPage()");
+    $(".next").removeClass("buttonDisabled");
+    $(".next").addClass("hover");
 
   
     if (trentKim[clickedButtonId - 1].description == "") {
@@ -226,9 +233,9 @@ function nextPage() {
     } else if ($(".clickedNav").text() == "Notes") {
         arrayPosition = jQuery.inArray(thisPageNum, listOfNotes); 
         whichList = listOfNotes;
-    } else if ($(".clickedNav").text() == "Nearby") {
-        arrayPosition = jQuery.inArray(thisPageNum, listOfNearby); 
-        whichList = listOfNearby;
+    } else if ($(".clickedNav").text() == "Places") {
+        arrayPosition = jQuery.inArray(thisPageNum, listOfPlaces); 
+        whichList = listOfPlaces;
     // } else if ($(".clickedNav").text() == "About") {
     //     arrayPosition = jQuery.inArray(thisPageNum, listOfAbout); 
     //     whichList = listOfAbout;
@@ -296,6 +303,7 @@ function nextPage() {
     $("#num" + nextPage).addClass("selected");
 
     $("#" + thisPageNum).removeAttr("onclick");
+    $("#" + thisPageNum).attr("onclick", "openPage(this.id)");
     $("#" + nextPage).attr("onclick", "exitContent(this.id)");
 
     previousButton = nextPage;
@@ -314,9 +322,9 @@ function previousPage() {
     } else if ($(".clickedNav").text() == "Notes") {
         arrayPosition = jQuery.inArray(thisPageNum, listOfNotes); 
         whichList = listOfNotes;
-    } else if ($(".clickedNav").text() == "Nearby") {
-        arrayPosition = jQuery.inArray(thisPageNum, listOfNearby); 
-        whichList = listOfNearby;
+    } else if ($(".clickedNav").text() == "Places") {
+        arrayPosition = jQuery.inArray(thisPageNum, listOfPlaces); 
+        whichList = listOfPlaces;
     // } else if ($(".clickedNav").text() == "About") {
     //     arrayPosition = jQuery.inArray(thisPageNum, listOfAbout); 
     //     whichList = listOfAbout;
@@ -383,6 +391,7 @@ function previousPage() {
     $("#num" + prevPage).addClass("selected");
 
     $("#" + thisPageNum).removeAttr("onclick");
+    $("#" + thisPageNum).attr("onclick", "openPage(this.id)");
     $("#" + prevPage).attr("onclick", "exitContent(this.id)");
 
     previousButton = prevPage;
@@ -401,10 +410,19 @@ function exitContent(exitThisId) {
     
     // return number button to clickable state
     $("#" + exitThisId).removeAttr("onclick");
+    $("#" + exitThisId).attr("onclick", "openPage(this.id)");
     $(".numButton").attr("onclick", "openPage(this.id)");
-    
+    $(".buttonDisabled").removeAttr("onclick");
+    $(".buttonDisabled").removeClass("hover");
+
+
     // remove previous and next buttons
-    $("#prevNext").empty();
+    $(".previous").removeAttr("onclick");
+    $(".previous").removeClass("hover");
+    $(".previous").addClass("buttonDisabled");
+    $(".next").removeAttr("onclick");
+    $(".next").removeClass("hover");
+    $(".next").addClass("buttonDisabled");
 
     // return the corresponding item in list to its normal state
     $(".guideText").css("font-size", "16px");
@@ -419,7 +437,7 @@ function exitContent(exitThisId) {
         $("#circle" + exitThisId).css("border-color", "#3444DE");
         $("#circle" + exitThisId).css("background-color", "");
         $("#num" + exitThisId).css("color", "#3444DE");
-    }
+    };
 };
 
 

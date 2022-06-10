@@ -3,8 +3,8 @@
       {
         "number": "1",
         "name": "College Hill",
-        "type": "Nearby",
-        "date": "December 2021",
+        "type": "Places",
+        "date": "2021",
         "thumbnail": "",
         "description": "",
         "media": "<img src=\"assets/photos/college-hill/1.jpeg\"><img src=\"assets/photos/college-hill/2.jpeg\"><img src=\"assets/photos/college-hill/3.jpeg\"><img src=\"assets/photos/college-hill/4.jpeg\"><img src=\"assets/photos/college-hill/5.jpeg\"><img src=\"assets/photos/college-hill/6.jpeg\"><img src=\"assets/photos/college-hill/7.jpeg\">"
@@ -21,19 +21,19 @@
       {
         "number": "3",
         "name": "College Hill",
-        "type": "Nearby",
-        "date": "December 2021",
+        "type": "Places",
+        "date": "2021",
         "thumbnail": "",
         "description": "",
-        "media": "<img src=\"assets/photos/college-hill-2/1.jpg\"><img src=\"assets/photos/college-hill-2/2.jpg\"><img src=\"assets/photos/college-hill-2/3.jpg\">"
+        "media": "<img src=\"assets/photos/college-hill-2/1.jpg\">"
       },
       {
         "number": "4",
         "name": "From After a Shift",
         "type": "Notes",
-        "date": "August 2021",
+        "date": "2021",
         "thumbnail": "",
-        "description": "I work at a bubble tea shop where I play my music, currently mainly consisting of Korean bands and artists, during each of my shifts. The music reflects my taste, while helping with language learning, but I sense it’s ulterior purpose is identity validation. Choosing music to represent myself and the shop can feel like a performance. To be Korean can feel like a performance. <br><br>Thinking that many customers may associate the music with me being Korean, provides a duality of validation, yet anonymity I had never previously experienced. But every so often other Koreans will come in, firstly identifiable by language, but secondly identifiable by their twitching ears and widened eyes locating the startling sound of a familiar language in a Taiwanese-American business. Having features of a Korean person, their eyes interrogate mine to determine whether there is a shared identity, but their validation would reveal the person beneath this deceptive character. <br><br>Our shared identity is often confirmed by their receipt name from the order kiosk. My existance trembles all the way through the receipt in my hand. While methodically making their drink, with each pour, sitr, and shake, I silently practice the pronunciation of their name. As their drink seals, panic constrains me. <em>What did I just say? How did you just pronounce their name? How could it have sounded so right, but stumbled out of my mouth so wrong? What are they thinking? Did they smirk? Did they chuckle? What do they think? I’m a romanticizing “Koreaboo”? Maybe just a Korean-American?</em> But would they have guessed that they had just witnessed an act. That I have but no choice to perform.",
+        "description": "I work at a bubble tea shop where I play my music, mainly consisting of Korean bands and artists, during each of my shifts. The music reflects my taste, while helping with language learning, but I sense it’s ulterior purpose lies within my insecurity. I choose music, not only for the ambiance of the shop, but also as a performance. To be Korean can feel like a performance. <br><br>Thinking that many customers may associate the music with me being Korean, provides a duality of validation, yet anonymity I had never previously experienced. But every so often other Koreans will come in, firstly identifiable by language, but secondly identifiable by their twitching ears and widening eyes locating the startling sound of a familiar language in a Taiwanese-American business. A familar face. Their eyes interrogate mine. But who would their validation reveal beneath this fragile act? <br><br>If not yet comfirmed, the receipt name on their order often reveals the thin thread that connects us. The receipt in my hand softly trembles. While methodically making their drink, with each pour, sitr, and shake, I silently practice the pronunciation of their name. Their drink seals. So this stage fright. <em>What did I just say? How did you just pronounce their name? How could it have sounded so right, but stumbled out of my mouth so wrong? What are they thinking? Did they smirk? Did they chuckle? What do they think? I’m a romanticizing “Koreaboo”? Maybe just a Korean-American?</em> But for those who must perform their existence do not receive an applause.",
         "media": ""
       },
       {
@@ -49,16 +49,16 @@
         "number": "6",
         "name": "From a Park Bench",
         "type": "Notes",
-        "date": "January 2022",
+        "date": "2022",
         "thumbnail": "",
-        "description": "<em>December 20, 2021 <br>When we were children, we were always looking up. <br>Now that we’re adults, we are always looking down. <br>Down at ourselves looking up.</em> <br><br>I just looked up. <br><br>As I began to walk home after work, following the same scour I’ve drawn in the concrete, I found myself paying respect to my elders, the trees. In order to properly pay respect to the trees, you must look them in the eyes and smile to acknowledge the years between you and them. To find their eyes, look to where the setting sun paints their branches. So long as you do that, they’ll smile back and be there whenever you need. <br><br>When you do pay respect to the trees for the first time, tears might gather like rain droplets gather on the youthful branches of their saplings. Tears might gather, not because it’s the first time, but because it’s not. <br><br>I was a child under the trees again. <br><br>I just looked up.",
+        "description": "<em>December 20, 2021 <br>When we were children, we were always looking up. <br>Now that we’re adults, we are always looking down. <br>Down at ourselves looking up.</em> <br><br>Or just looked up. <br><br>As I began to walk home after work, following the same scour I’ve drawn in the concrete, I found myself paying respect to my elders, the trees. In order to properly pay respect to the trees, you must look them in the eyes and smile to acknowledge the years between you and them. To find their eyes, look to where the setting sun paints their branches. So long as you do that, they’ll smile back and be there whenever you need. <br><br>When you do pay respect to the trees for the first time, tears might gather like rain droplets gather on the youthful branches of their saplings. Tears might gather, not because it’s the first time, but because it’s not. <br><br>I was a child under the trees again. <br><br>Just looked up.",
         "media": ""
       },
       {
         "number": "7",
         "name": "Bedroom",
-        "type": "Nearby",
-        "date": "December 2021",
+        "type": "Places",
+        "date": "2021",
         "thumbnail": "",
         "description": "",
         "media": "<img src=\"assets/photos/bedroom/1.jpg\"><img src=\"assets/photos/bedroom/2.jpg\"><img src=\"assets/photos/bedroom/3.jpg\">"
@@ -76,7 +76,7 @@
         "number": "9",
         "name": "From Home",
         "type": "Notes",
-        "date": "January 2022",
+        "date": "2022",
         "thumbnail": "",
         "description": "You know your home is your home, even if you wish it weren’t, when returning from a visit, you’re sitting uncomfortably high on a stool to eat dinner, rather than a low, cushioned chair that squeaks when weight is shifted diagonally; you’re opening the cabinet to the plates, rather than to the cups because the placement is the same as the wood veneer cabinet to the right, nestled in the corner of the kitchen; you’re turning away from the shower head to grab the bar of soap that is always neglected, left on the tub floor, hydrating and dehydrating with each shower, but it’s where you last left it, in the rack hanging from the shower head. It’s undeniable. Each time I return from our cluttered colonial farmhouse, I question the place I wish I could call home.",
         "media": ""
@@ -84,8 +84,8 @@
       {
         "number": "10",
         "name": "Living Room",
-        "type": "Nearby",
-        "date": "January 2022",
+        "type": "Places",
+        "date": "2022",
         "thumbnail": "",
         "description": "",
         "media": "<img src=\"assets/photos/living-room/1.jpg\"><img src=\"assets/photos/living-room/2.jpg\"><img src=\"assets/photos/living-room/3.jpg\">"
@@ -94,8 +94,8 @@
       {
         "number": "11",
         "name": "Karezz Hair Salon",
-        "type": "Nearby",
-        "date": "January 2022",
+        "type": "Places",
+        "date": "2022",
         "thumbnail": "",
         "description": "",
         "media": "<img src=\"assets/photos/karezz-hair-salon/1.jpg\"><img src=\"assets/photos/karezz-hair-salon/2.jpg\"><img src=\"assets/photos/karezz-hair-salon/3.jpg\"><img src=\"assets/photos/karezz-hair-salon/4.jpg\">"
@@ -112,8 +112,8 @@
       {
         "number": "13",
         "name": "Bedroom",
-        "type": "Nearby",
-        "date": "January 2022",
+        "type": "Places",
+        "date": "2022",
         "thumbnail": "",
         "description": "",
         "media": "<img src=\"assets/photos/bedroom-2/1.jpg\"><img src=\"assets/photos/bedroom-2/2.jpg\">"
@@ -130,8 +130,8 @@
       {
         "number": "15",
         "name": "Old Bridge Path",
-        "type": "Nearby",
-        "date": "February 2022",
+        "type": "Places",
+        "date": "2022",
         "thumbnail": "",
         "description": "",
         "media": "<img src=\"assets/photos/old-bridge-path/1.jpg\"><img src=\"assets/photos/old-bridge-path/2.jpg\"><img src=\"assets/photos/old-bridge-path/3.jpg\"><img src=\"assets/photos/old-bridge-path/4.jpg\">"
@@ -139,8 +139,8 @@
       {
         "number": "16",
         "name": "Bedroom",
-        "type": "Nearby",
-        "date": "February 2022",
+        "type": "Places",
+        "date": "2022",
         "thumbnail": "",
         "description": "",
         "media": "<img src=\"assets/photos/bedroom-3/3.jpg\"><img src=\"assets/photos/bedroom-3/2.jpg\"><img src=\"assets/photos/bedroom-3/1.jpg\">"
@@ -157,8 +157,8 @@
       {
         "number": "18",
         "name": "Old Bridge Path",
-        "type": "Nearby",
-        "date": "February 2022",
+        "type": "Places",
+        "date": "2022",
         "thumbnail": "",
         "description": "",
         "media": "<img src=\"assets/photos/old-bridge-path-2/1.jpg\"><img src=\"assets/photos/old-bridge-path-2/2.jpg\"><img src=\"assets/photos/old-bridge-path-2/3.jpg\">"
@@ -167,16 +167,16 @@
         "number": "19",
         "name": "From My Desk",
         "type": "Notes",
-        "date": "March 2022",
+        "date": "2022",
         "thumbnail": "",
-        "description": "I’m crouched knees between my arms in my desk chair ignoring the churning of an empty stomach, while the soundtrack of <em>C’mon C’mon</em> creates the melancholy ambiance I enjoy while writing. This evening I’ve begun three iterations of a website introduction that I have each promptly given up on. My third attempt was the closest to the conveying the experiences in which my work is grounded in, but I caught myself trying to forcibly wax poetics and meaning into it. I usually stop writing at that realization, but in the end, something else made sense. That a people is embodied within the voice, not the language. <br><br>In my third iteration, I said, “To lose a language means it is something recoverable. But to lose a language means to grieve it as well”. It is a contradiction has defined my understanding of my grief, as language, as Korean, feels intrinsically tied to a people, to an ancestry, to a history, to a sense of collective grief yet resiliency— to family. For me, language can feel like exile, unable to communicate with myself and my people. But at the same time, transnational adoption and I originate from the same painful history of colonization, separation, war, loss, patriarchy, and struggle. There, in fact, is no contradiction. Language can be loss, but to be recoverable implies hierarchy— to be recoverable implies that I’ll eventually be satisfied. A people is embodied within the voice, not the language. The only language that is and has always been enough is the voice.",
+        "description": "I’m crouched, knees between my arms, in my desk chair ignoring the churning of an empty stomach, while the soundtrack of <em>C’mon C’mon</em> creates the melancholy ambiance I enjoy while writing. This evening I’ve begun three iterations of a website introduction that I have each promptly given up on. My third attempt was the closest to conveying the experiences in which my work is grounded in, but I caught myself trying to forcibly wax poetics and meaning into it. I usually stop writing at that realization, but in the end, something else made sense in my closing thoughts. That a people is embodied within the voice, not the language. <br><br>In my third iteration, I said, “To lose a language means it is something recoverable. But to lose a language means to grieve it as well”. It is a contradiction that has defined my grief, as language, as Korean, feels intrinsically tied to a people, to an ancestry, to a history, to a sense of collective grief yet resiliency— to my 어머니. Sometimes I can feel exiled by language, unable to communicate with myself and other Koreans. But at the same time, transnational adoption and I originate from the same painful history of colonization, war, separation, loss, patriarchy, and capitalism. There, in fact, is no contradiction. Language can be loss, but to be recoverable implies hierarchy— to be recoverable implies that I’ll eventually be satisfied. A people is embodied within the voice, not the language. The only language that is and has always been enough has been my voice.",
         "media": ""
       },
       {
         "number": "20",
         "name": "Bedroom",
-        "type": "Nearby",
-        "date": "April 2022",
+        "type": "Places",
+        "date": "2022",
         "thumbnail": "",
         "description": "",
         "media": "<img src=\"assets/photos/bedroom-4/1.jpg\">"
@@ -193,8 +193,8 @@
       {
         "number": "22",
         "name": "India Point Park",
-        "type": "Nearby",
-        "date": "April 2022",
+        "type": "Places",
+        "date": "2022",
         "thumbnail": "",
         "description": "",
         "media": "<img src=\"assets/photos/india-point-park/1.jpg\"><img src=\"assets/photos/india-point-park/2.jpg\">"
@@ -202,29 +202,47 @@
       {
         "number": "23",
         "name": "Old Bridge Path",
-        "type": "Nearby",
-        "date": "May 2022",
+        "type": "Places",
+        "date": "2022",
         "thumbnail": "",
         "description": "",
         "media": "<img src=\"assets/photos/old-bridge-path-3/1.jpg\"><img src=\"assets/photos/old-bridge-path-3/2.jpg\">"
       },
       {
         "number": "24",
+        "name": "Portfolio V1",
+        "type": "Projects",
+        "date": "2022",
+        "thumbnail": "",
+        "description": "The <a href=\"https://stirring-rolypoly-028a0c.netlify.app/\">first version</a> of this portfolio was inspired by my memory of the mystery and playfulness of clicking buttons (yes, I was the child who clicked all the elevator buttons). Each button opened to a page that was either a project, note, place nearby, or about. Using the navigation tool the left, the buttons could be filtered and, like footnotes, their contents revealed. <br><br>In my website’s current form, I wanted to make navigation easier, while not losing the interaction of the numbered buttons, considering that not everyone has the time or want to explore its contents.",
+        "media": "<img src=\"assets/projects/portfolio-v1/1.gif\"><img src=\"assets/projects/portfolio-v1/2.gif\">"
+      },
+      {
+        "number": "25",
         "name": "From a Photo in Seoul",
         "type": "Notes",
-        "date": "April 2022",
+        "date": "2022",
         "thumbnail": "",
         "description": "The camera flash highlights the swelling tears confined by your furrowed brow. Yet your arms are secure, gently wrapped around me. Your hands create an enclosure to suggest permanence. Were you too withholding information from me? Withholding our impermanence to give false reassurance despite the flash of the camera being so blinding. Or would the pain within your eyes have been even more searing had I felt your arms slipping away?",
         "media": "<img src=\"assets/writing/a-seoul-foster-home/1.png\">"
       },
       {
-        "number": "25",
+        "number": "26",
         "name": "Exit 1D",
-        "type": "Nearby",
-        "date": "May 2022",
+        "type": "Places",
+        "date": "2022",
         "thumbnail": "",
         "description": "",
         "media": "<img src=\"assets/photos/exit-1d/1.jpg\"><img src=\"assets/photos/exit-1d/2.jpg\">"
+      },
+      {
+        "number": "27",
+        "name": "Name Journaling",
+        "type": "Projects",
+        "date": "2022",
+        "thumbnail": "",
+        "description": "Name journaling was a method I created for myself to document the transition between names as a Korean adoptee and the patterns based upon the instances each of the names that I am referred by was used. In 2021, I created a <a href=\"https://name-journal.glitch.me/\">website</a> to begin this documentation. Unfortunately, I was impatient with the idea, and had difficulty making a habit of journalling, thus I did not continue it. <br><br>A year later, I am still reminded of the significance of my names. The space between Trent          Lowe grows, as the space between Trent   Kim shrinks. Kangseok Kim (김강석) no longer only lives in my fabricated memories, and Trent Konglishized (트랜트) echoes uncomfortably in my ears. My original decision to reclaim my surname, rather than go by my adoptive name, Trent Lowe, was motivated by the cognitive dissonance I would feel knowing my name contradicted my face and embodied experiences. As I have begun name journaling again as of June 2022, I have been questioning the ways that adoptive names, or renaming, can reflect loss and the neo-colonial ethic inherent to transnational adoption. Now, when I name journal, I think of the crucial memories of each name knowing the significance is not recognized at the sound of my name. <br><br>Work in progress.",
+        "media": "<img src=\"assets/projects/name-journal/1.gif\"><img src=\"assets/projects/name-journal/2.png\">"
       }
     ]
   }
