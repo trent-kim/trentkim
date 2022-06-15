@@ -30,11 +30,12 @@ $.getJSON("data.json", function(data){
         };
 
         // create guide list
-        $("#guideContainer").append(`<div id="guide${trentKim[i].number}" class="guideText">
+        $("#guide").append(`<div id="guide${trentKim[i].number}" class="guideText">
                 <div>${trentKim[i].number}.&nbsp;</div>
                 <div class="guideTitle" id="item${trentKim[i].number}">${trentKim[i].name}</div>
             </div>`);
-    }; 
+    };
+    $("#home").append(`1-${trentKim.length}`);
 });
 
 
@@ -57,7 +58,7 @@ function numHover(hoverNum) {
 
     // show content on hover
     $("#contentContainer").append(`
-                        <div class="pageContentContainer">
+                        <div class="content">
                             <div class="pageDescription pageContent">${trentKim[hoverNum - 1].description}</div>
                             <div class="pageMedia"></div>
                         </div>`);
@@ -101,7 +102,7 @@ function filterGuide(clickedNavId) {
     $(".guideText").css("margin", "0px");
 
     // remove guide list
-    $("#guideContainer").empty();
+    $("#guide").empty();
     
     // highlight clicked filter
     $(".nav").css("color", "#515151");
@@ -111,9 +112,9 @@ function filterGuide(clickedNavId) {
     $("#" + clickedNavId).addClass("clickedNav");
     
     // if 'Trent Kim' is selected, then append the full list
-    if ("homeTrent" == clickedNavId) {
+    if ("home" == clickedNavId) {
         for(let i=0; i < trentKim.length; i++) {
-            $("#guideContainer").append(`<div id="guide${trentKim[i].number}" class="guideText">
+            $("#guide").append(`<div id="guide${trentKim[i].number}" class="guideText">
                                             <div>${trentKim[i].number}.&nbsp;</div>
                                             <div id="item${trentKim[i].number}">${trentKim[i].name}</div>
                                         </div>`);
@@ -125,7 +126,7 @@ function filterGuide(clickedNavId) {
         let idNum = j + 1;
 
         // if 'Trent Kim', allow functionality to all number buttons
-        if ("homeTrent" == clickedNavId) {
+        if ("home" == clickedNavId) {
             $("#" + idNum).attr("onclick", "openPage(this.id)");
             $("#" + idNum).removeClass("buttonDisabled");
             $("#" + idNum).addClass("hover");
@@ -134,7 +135,7 @@ function filterGuide(clickedNavId) {
         } else {
             // if an item equals the selected filter, then append that item to the guide list
             if (trentKim[j].type == clickedNavId) {
-                $("#guideContainer").append(`<div id="guide${trentKim[j].number}" class="guideText">
+                $("#guide").append(`<div id="guide${trentKim[j].number}" class="guideText">
                                                 <div>${trentKim[j].number}.&nbsp;</div>
                                                 <div id="item${trentKim[j].number}">${trentKim[j].name}</div>
                                             </div>`);
@@ -175,7 +176,7 @@ function openPage(clickedButtonId) {
 
         // show content on hover
         $("#contentContainer").append(`
-                            <div class="pageContentContainer">
+                            <div class="content">
                                 <div class="pageDescription pageContent">${trentKim[clickedButtonId - 1].description}</div>
                                 <div class="pageMedia"></div>
                             </div>`);
@@ -280,7 +281,7 @@ function nextPage() {
                                         </div>`);
 
     // if 'Trent Kim' is selected, then number buttons are not highlighted. else, number buttons are highlighted when filtered
-    if ($(".clickedNav").attr("id") == "homeTrent") {
+    if ($(".clickedNav").attr("id") == "home") {
         $("#circle" + thisPageNum).css("border-color", "#F6F6F6");
         $("#circle" + thisPageNum).css("background-color", "");
         $("#num" + thisPageNum).css("color", "#515151");
@@ -368,7 +369,7 @@ function previousPage() {
                                         </div>`);
 
     // if 'Trent Kim' is selected, then number buttons are not highlighted. else, number buttons are highlighted when filtered
-    if ($(".clickedNav").attr("id") == "homeTrent") {
+    if ($(".clickedNav").attr("id") == "home") {
         $("#circle" + thisPageNum).css("border-color", "#F6F6F6");
         $("#circle" + thisPageNum).css("background-color", "");
         $("#num" + thisPageNum).css("color", "#515151");
@@ -429,7 +430,7 @@ function exitContent(exitThisId) {
     $(".guideText").css("margin", "0px");
 
     // if 'Trent Kim' is selected, then number buttons return to normal state. else, filtered number buttons return to highlighted state
-    if ($(".clickedNav").attr("id") == "homeTrent") {
+    if ($(".clickedNav").attr("id") == "home") {
         $(".circle").css("border-color", "#F6F6F6");
         $(".circle").css("background-color", "");
         $(".num").css("color", "#515151");
@@ -440,6 +441,21 @@ function exitContent(exitThisId) {
     };
 };
 
+
+// let coll = document.getElementsByClassName("aboutCollapsible");
+// let i;
+
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var content = this.nextElementSibling;
+//     if (content.style.maxHeight){
+//       content.style.maxHeight = null;
+//     } else {
+//       content.style.maxHeight = content.scrollHeight + "px";
+//     } 
+//   });
+// }
 
 
 // if (trentKim[clickedButtonId - 1].type == "Nearby") {
