@@ -38,12 +38,12 @@
       },
       {
         "number": "5",
-        "name": "The Institute of Smell",
+        "name": "Family Scent",
         "type": "Projects",
         "date": "2019",
-        "thumbnail": "<img src=\"assets/projects/smell-experiments/3.gif\">",
-        "description": "<em>The Institute of Smell</em> is a gateway to a world of aroma. From fresh cut grass to new born baby, they are the world’s largest and most notable scent collection agency. They pride themselves on their extensive odor libraries and range of scent collection products. They are committed to capturing and preserving the most valuable memories to be smelled and remembered for years to come. <br><br>Through the fictional entity of <em>The Institute of Smell</em>, I became interested in exploring the possible interventions and speculative futures of how our olfactory systems might be exploited and our perceptions of smell might change in the face of evolving family structures, loss, and climate disaster.",
-        "media": "<video controls><source src=\"assets/projects/smell-experiments/2.mov\" type=\"video/mp4\"></video><video controls><source src=\"assets/projects/smell-experiments/1.mp4\" type=\"video/mp4\"></video>"
+        "thumbnail": "",
+        "description": "A short motion graphics exercise on the possible interventions and speculative futures of how our olfactory systems might be exploited and our perceptions of smell might change in the face of evolving family structures.",
+        "media": "</video><video controls><source src=\"assets/projects/smell-experiments/1.mp4\" type=\"video/mp4\"></video>"
       },
       {
         "number": "6",
