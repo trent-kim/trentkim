@@ -157,6 +157,8 @@ function filterGuide(clickedNavId) {
             };
         };
     };
+
+    previousButton = ""
 };
 
 
@@ -442,17 +444,74 @@ function exitContent(exitThisId) {
 };
 
 
-// let coll = document.getElementsByClassName("aboutCollapsible");
-// let i;
+function openAbout() {
+    if ($(".aboutButton").hasClass("active")) {
+        $(".about").remove();
+        $(".aboutButton").removeClass("active");
+        $(".aboutButton").css("color", "#515151");
+        $(".aboutButtonContainer").css("border-bottom", "none");
+        $("#directContainer").css("align-content", "space-between");
+    } else {
+        $(".aboutButton").addClass("active");
+        $(".aboutButton").css("color", "#3444DE");
+        $(".aboutButtonContainer").css("border-bottom", "solid");
+        $(".aboutContainer").append(`<div class="about">I’m Trent Kim, an interdisciplinary designer and artist who values the ways that we can relate, reflect, and heal through stories.<br><br>
+                            Born in Jeonju, South Korea, I was adopted and grew up on a small farm in New Jersey. These days I can be found taking photos, journaling, learning Korean, and fixing the code of this website.<br><br>
+                            <a href="mailto:itstrentkiml@gmail.com">Email</a> / <a href="https://www.instagram.com/t.ks.k/">Instagram</a> / <a href="https://docs.google.com/document/d/1lB26zzVJ8Ni4yc9F2wuc2ut7OIViIkqHNGPv3X68hcQ/edit">Resume</a>
+                            </div>`);
+        $("#directContainer").css("align-content", "start");
+    };
+}
 
-// for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("click", function() {
+
+
+// REMOVED JSON DATA
+// {
+//     "number": "17",
+//     "name": "Wecair University",
+//     "type": "Projects",
+//     "date": "2021",
+//     "thumbnail": "",
+//     "description": "Inspired by the <a href=\"https://www.youtube.com/watch?v=3ByxB-U5yD8&ab_channel=SwankyPsammead\">tonal dissonance</a> and deceptively simple mechanics of games such as <a href=\"https://www.klei.com/games/dont-starve-together\">Don’t Starve Together</a>, <a href=\"https://adarkroom.doublespeakgames.com/\">A Dark Room</a>, and <a href=\"https://candybox2.github.io/\">Candy Box 2</a>, <em>Wecair University</em> is a text-based single-player, role-play game based on the and interactions in order for an art student to survive a rigorous, unforgiving university environment. Beginning within the confines of an email inbox, the student is greeted with an email from the Office of the President welcoming them as a new student. Gaining newfound independence in university is perceived as a time for growth and exploration, but as the game progresses, survival becomes increasingly difficult as the student must confront the exploitative reality of a neo-liberal institution whilst maintaining the health of their mind, body, and wallet. <br><br><em>Wecair University</em> was a project I stopped after the beginnings of a story board and front-end code, as I realized the project was far outside my individual capabilities. If anyone is interested in this idea, I’d love to talk about it and see it be completed and/or adapted.",
+//     "media": "<img src=\"assets/projects/wecair-university/2.png\"><img src=\"assets/projects/wecair-university/4.gif\"><img src=\"assets/projects/wecair-university/1.png\"><img src=\"assets/projects/wecair-university/5.gif\"><img src=\"assets/projects/wecair-university/3.png\">"
+//   },
+
+// {
+//     "number": "1",
+//     "name": "College Hill",
+//     "type": "Places",
+//     "date": "2021",
+//     "thumbnail": "",
+//     "description": "",
+//     "media": "<img src=\"assets/photos/college-hill/1.jpeg\"><img src=\"assets/photos/college-hill/2.jpeg\"><img src=\"assets/photos/college-hill/3.jpeg\"><img src=\"assets/photos/college-hill/4.jpeg\"><img src=\"assets/photos/college-hill/5.jpeg\"><img src=\"assets/photos/college-hill/6.jpeg\"><img src=\"assets/photos/college-hill/7.jpeg\">"
+//   },
+
+// {
+//     "number": "3",
+//     "name": "College Hill",
+//     "type": "Places",
+//     "date": "2021",
+//     "thumbnail": "",
+//     "description": "",
+//     "media": "<img src=\"assets/photos/college-hill-2/1.jpg\">"
+//   },
+
+
+
+
+// var coll = document.getElementsByClassName("collapsible");
+// var x;
+
+// for (x = 0; x < coll.length; x++) {
+//   coll[x].addEventListener("click", function() {
 //     this.classList.toggle("active");
-//     var content = this.nextElementSibling;
-//     if (content.style.maxHeight){
-//       content.style.maxHeight = null;
+//     var contentColl = this.nextElementSibling;
+//     if (contentColl.style.maxHeight){
+//       contentColl.style.maxHeight = null;
+//       console.log("working");
 //     } else {
-//       content.style.maxHeight = content.scrollHeight + "px";
+//       contentColl.style.maxHeight = contentColl.scrollHeight + "px";
+//       console.log("working");
 //     } 
 //   });
 // }
