@@ -98,6 +98,7 @@ a:active {
     /* margin-bottom: 20px; */
     /* width: 100%; */
     /* min-width: 85px; */
+    color: #515151;
     padding: 10px 45px 10px 45px;
     border-bottom: solid;
     justify-content: space-between;
@@ -174,6 +175,7 @@ a:active {
     display: flex;
     flex-flow: column;
     /* cursor: pointer; */
+    color: #515151;
     width: 100%;
     border-top: solid;
     padding: 0px 0px 0px 0px;
@@ -236,6 +238,7 @@ a:active {
     padding: 10px 0px 10px 0px;
     border-bottom: solid;
     /* position: fixed; */
+    color: #515151;
     width: 100%;
 }
 

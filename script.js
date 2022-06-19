@@ -448,12 +448,12 @@ function openAbout() {
     if ($(".aboutButton").hasClass("active")) {
         $(".about").remove();
         $(".aboutButton").removeClass("active");
-        $(".aboutButton").css("color", "#515151");
+        // $(".aboutButton").css("color", "#515151");
         $(".aboutButtonContainer").css("border-bottom", "none");
         $("#directContainer").css("align-content", "space-between");
     } else {
         $(".aboutButton").addClass("active");
-        $(".aboutButton").css("color", "#3444DE");
+        // $(".aboutButton").css("color", "#3444DE");
         $(".aboutButtonContainer").css("border-bottom", "solid");
         $(".aboutContainer").append(`<div class="about">I’m Trent Kim, an interdisciplinary designer and artist who values the ways that we can relate, reflect, and heal through stories.<br><br>
                             Born in Jeonju, South Korea, I was adopted and grew up on a small farm in New Jersey. These days I can be found taking photos, journaling, learning Korean, and fixing the code of this website.<br><br>
